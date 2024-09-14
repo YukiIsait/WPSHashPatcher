@@ -5,12 +5,12 @@
 ## 使用方式
 
 ```txt
-java -jar wps-hash-patcher.jar <executableFilePath> [options]
+java -jar wps-hash-patcher.jar <filePath> [options]
 ```
 
 ### 参数
 
-- `executableFilePath`
+- `filePath`
     - 目标可执行文件
     - 类型：String
 
