@@ -5,7 +5,7 @@
 ## 使用方式
 
 ```txt
-java -jar wps-hash-patcher.jar <filePath> [options]
+java -jar wps-hash-patcher.jar <filePath>
 ```
 
 ### 参数
@@ -13,13 +13,6 @@ java -jar wps-hash-patcher.jar <filePath> [options]
 - `filePath`
     - 目标可执行文件
     - 类型：String
-
-### 选项
-
-- `--architecture, -a`
-    - 目标可执行文件架构
-    - 类型：i386 / amd64
-    - 默认值：i386
 
 ## 开源许可
 

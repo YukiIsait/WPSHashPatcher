@@ -6,12 +6,12 @@ fun findPattern(
     data: ByteBuffer,
     pattern: ByteArray,
     mask: ByteArray? = null,
-    startPosition: Int = 0,
+    index: Int = data.position(),
     reverse: Boolean = false,
     maxMatches: Int = Int.MAX_VALUE
 ): List<Int> {
     val matches = mutableListOf<Int>()
-    val start = if (reverse) minOf(data.limit() - pattern.size, startPosition) else maxOf(0, startPosition)
+    val start = if (reverse) minOf(data.limit() - pattern.size, index) else maxOf(0, index)
     val range = if (reverse) start downTo 0 else start..data.limit() - pattern.size
 
     for (i in range) {
