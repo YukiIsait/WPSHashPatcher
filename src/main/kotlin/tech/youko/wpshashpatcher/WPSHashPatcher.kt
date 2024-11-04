@@ -12,7 +12,9 @@ fun main(args: Array<String>) {
         parser.parse(args)
         patchExecutableFile(File(filePath))
     } catch (e: Exception) {
-        println("Failure: ${e.message}")
-        exitProcess(1)
+        if (e.message != null) {
+            println("Failure: ${if (e.message!!.endsWith('.')) e.message!! else e.message!!.plus('.')}")
+        }
+        exitProcess(127)
     }
 }
