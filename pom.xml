@@ -70,7 +70,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>tech.youko.wpshashpatcher.WPSHashPatcherKt</mainClass>
+                            <mainClass>tech.youko.wpshashpatcher.MainKt</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
