@@ -1,5 +1,7 @@
 ﻿# WPS Office 配置文件哈希校验修补程序
 
+> 新的修补方式见 [WPSHashPatch](https://github.com/YukiIsait/WPSHashPatch) 仓库。
+
 本修补程序用于使 WPS Office 的安装程序和主程序（krt.dll）跳过对配置文件的哈希校验。
 
 ## 使用方式
